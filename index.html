@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <label class="custom-file-upload">
+            <input id="file-upload" type="file" accept="image/*" />
+            Upload image
+        </label>
+
+        <div id="image-container"></div>
+            <dialog id="zoom-dialog">
+            <div class="zoom-header">
+                <span>Zoom (Click outside or Esc to exit)</span>
+                <button class="close-btn" id="close-modal">X</button>
+            </div>
+        <div class="zoom-wrapper">
+            <div id="modal-container"></div>
+        </div>
+    </dialog>
+
+        <div id="status"></div>
+
+        <button id="download-btn">Download image</button>
+    </main>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
